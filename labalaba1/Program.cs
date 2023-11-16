@@ -10,10 +10,10 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            double e = 0.001;
+            double e = 0.0674801;
             double e1;
-            double a = 0.6;
-            double b = 0.7;
+            double a = 0.6576;
+            double b = 0.78533;
             double x;
 
             double fa, fb, fa1, fb1;
