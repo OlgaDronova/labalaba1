@@ -16,6 +16,16 @@ namespace ConsoleApp2
             double b = 0.78533;
             double x;
 
+            double fa, fb, fa1, fb1;
+            fa = Math.Pow(2, -a) - Math.Sin(a);
+            fb = Math.Pow(2, -b) - Math.Sin(b);
+            fa1 = Math.Sin(a) + Math.Pow(2, Math.Log(2)) / Math.Pow(2, a);
+            fb1 = Math.Sin(b) + Math.Pow(2, Math.Log(2)) / Math.Pow(2, b);
+            double fa, fb, fa1, fb1;
+            fa = Math.Pow(2, -a) - Math.Sin(a);
+            fb = Math.Pow(2, -b) - Math.Sin(b);
+            fa1 = Math.Sin(a) + Math.Pow(2, Math.Log(2)) / Math.Pow(2, a);
+            fb1 = Math.Sin(b) + Math.Pow(2, Math.Log(2)) / Math.Pow(2, b);
           
 
             if ((fa < 0 && fa1 < 0) || (fa > 0 && fa1 > 0))
@@ -69,7 +79,7 @@ namespace ConsoleApp2
                 xh = (c - (Math.Pow(2, -xh) - Math.Sin(xh)) + xh * (Math.Pow(2, -c) + Math.Sin(c))) / (Math.Pow(2, -xh) - Math.Sin(xh) - (Math.Pow(2, -c) - Math.Sin(c)));
                 e1 = (Math.Abs(Math.Pow(2, -xh) - Math.Sin(xh))) / 1.1;
                 Console.WriteLine("x" + i + " = " + xh);
-                if (e1 > 0.001)
+                if (e1 < 0.001)
                 {
                     Console.WriteLine("e" + " = " + e1 + " > 0.00451" + "\n");
                 }
@@ -78,7 +88,7 @@ namespace ConsoleApp2
                     Console.WriteLine("e" + " = " + e1 + " < 0.04501" + "\n");
                 }
             }
-            while (e1 > e);
+            while (e1 < e);
             Console.WriteLine( xh);
 
 
