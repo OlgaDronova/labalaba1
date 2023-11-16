@@ -43,7 +43,7 @@ namespace ConsoleApp2
             }
 
             int i = 0;
-            Console.WriteLine("Метод касательных \n");
+            Console.WriteLine("Решение методом касательных \n");
             do
             {
                 i = i + 1;
@@ -61,11 +61,11 @@ namespace ConsoleApp2
                 }
             }
             while (e1 > e);
-            Console.WriteLine("Ответ: x = " + x + "\n\n");
+            Console.WriteLine( x + "\n\n");
 
 
             i = 0;
-            Console.WriteLine("Метод хорд \n");
+            Console.WriteLine("Решение методом хорд \n");
             do
             {
                 i = i + 1;
@@ -83,7 +83,7 @@ namespace ConsoleApp2
                 }
             }
             while (e1 > e);
-            Console.WriteLine("Ответ: x = " + xh);
+            Console.WriteLine( xh);
 
 
         }
