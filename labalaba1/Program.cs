@@ -48,7 +48,7 @@ namespace ConsoleApp2
             {
                 i = i + 1;
 
-                x = x - (Math.Pow(2, -x) - Math.Sin(x)) / (-Math.Cos(x) - Math.Log(2) / Math.Pow(2, x));
+                x = x - (Math.Pow(2, -x) + Math.Sin(x)) / (-Math.Cos(x) + Math.Log(2) / Math.Pow(2, x));
                 e1 = (Math.Abs(Math.Pow(2, -x) - Math.Sin(x))) / 1.1;
                 Console.WriteLine("x" + i + " = " + x);
                 if (e1 > 0.00345361)
@@ -70,7 +70,7 @@ namespace ConsoleApp2
             {
                 i = i + 1;
 
-                xh = (c * (Math.Pow(2, -xh) - Math.Sin(xh)) - xh * (Math.Pow(2, -c) - Math.Sin(c))) / (Math.Pow(2, -xh) - Math.Sin(xh) - (Math.Pow(2, -c) - Math.Sin(c)));
+                xh = (c - (Math.Pow(2, -xh) - Math.Sin(xh)) + xh * (Math.Pow(2, -c) + Math.Sin(c))) / (Math.Pow(2, -xh) - Math.Sin(xh) - (Math.Pow(2, -c) - Math.Sin(c)));
                 e1 = (Math.Abs(Math.Pow(2, -xh) - Math.Sin(xh))) / 1.1;
                 Console.WriteLine("x" + i + " = " + xh);
                 if (e1 > 0.001)
