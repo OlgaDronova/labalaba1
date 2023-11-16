@@ -73,7 +73,7 @@ namespace ConsoleApp2
                 xh = (c * (Math.Pow(2, -xh) - Math.Sin(xh)) - xh * (Math.Pow(2, -c) - Math.Sin(c))) / (Math.Pow(2, -xh) - Math.Sin(xh) - (Math.Pow(2, -c) - Math.Sin(c)));
                 e1 = (Math.Abs(Math.Pow(2, -xh) - Math.Sin(xh))) / 1.1;
                 Console.WriteLine("x" + i + " = " + xh);
-                if (e1 > 0.001)
+                if (e1 < 0.001)
                 {
                     Console.WriteLine("e" + " = " + e1 + " > 0.00451" + "\n");
                 }
@@ -82,7 +82,7 @@ namespace ConsoleApp2
                     Console.WriteLine("e" + " = " + e1 + " < 0.04501" + "\n");
                 }
             }
-            while (e1 > e);
+            while (e1 < e);
             Console.WriteLine( xh);
 
 
