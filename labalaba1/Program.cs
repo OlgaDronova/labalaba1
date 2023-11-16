@@ -51,7 +51,7 @@ namespace ConsoleApp2
                 x = x - (Math.Pow(2, -x) - Math.Sin(x)) / (-Math.Cos(x) - Math.Log(2) / Math.Pow(2, x));
                 e1 = (Math.Abs(Math.Pow(2, -x) - Math.Sin(x))) / 1.1;
                 Console.WriteLine("x" + i + " = " + x);
-                if (e1 > 0.001)
+                if (e1 > 0.00345361)
                 {
                     Console.WriteLine("e" + " = " + e1 + " > 0.00234251" + "\n");
                 }
