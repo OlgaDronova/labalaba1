@@ -53,11 +53,11 @@ namespace ConsoleApp2
                 Console.WriteLine("x" + i + " = " + x);
                 if (e1 > 0.001)
                 {
-                    Console.WriteLine("e" + " = " + e1 + " > 0.001" + "\n");
+                    Console.WriteLine("e" + " = " + e1 + " > 0.00234251" + "\n");
                 }
                 else
                 {
-                    Console.WriteLine("e" + " = " + e1 + " < 0.001" + "\n");
+                    Console.WriteLine("e" + " = " + e1 + " < 0.06701" + "\n");
                 }
             }
             while (e1 > e);
@@ -75,11 +75,11 @@ namespace ConsoleApp2
                 Console.WriteLine("x" + i + " = " + xh);
                 if (e1 > 0.001)
                 {
-                    Console.WriteLine("e" + " = " + e1 + " > 0.001" + "\n");
+                    Console.WriteLine("e" + " = " + e1 + " > 0.00451" + "\n");
                 }
                 else
                 {
-                    Console.WriteLine("e" + " = " + e1 + " < 0.001" + "\n");
+                    Console.WriteLine("e" + " = " + e1 + " < 0.04501" + "\n");
                 }
             }
             while (e1 > e);
