@@ -16,11 +16,7 @@ namespace ConsoleApp2
             double b = 0.78533;
             double x;
 
-            double fa, fb, fa1, fb1;
-            fa = Math.Pow(2, -a) - Math.Sin(a);
-            fb = Math.Pow(2, -b) - Math.Sin(b);
-            fa1 = Math.Sin(a) + Math.Pow(2, Math.Log(2)) / Math.Pow(2, a);
-            fb1 = Math.Sin(b) + Math.Pow(2, Math.Log(2)) / Math.Pow(2, b);
+          
 
             if ((fa < 0 && fa1 < 0) || (fa > 0 && fa1 > 0))
             {
